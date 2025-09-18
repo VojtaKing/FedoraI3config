@@ -1,0 +1,20 @@
+theme = "onedark"
+
+[editor]
+line-number = "relative"
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+C-s = ":write" # Ctrl and 's' to write
+Cmd-s = ":write" # Cmd or Win or Meta and 's' to write
+[keys.insert]
+C-s = ":write" # Ctrl and 's' to write
+Cmd-s = ":write" # Cmd or Win or Meta and 's' to write
