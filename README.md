@@ -30,14 +30,3 @@ On Fedora, you can install them via:
 ```bash
 sudo dnf install i3 polybar rofi dunst btop helix zathura thunar fastfetch dconf
 ```
-Installation
-
-Clone the repository and copy the config files to your home directory: 
-```bash
-git clone https://github.com/VojtaKing/fedora-i3-config.git
-cd fedora-i3-config
-```
-# Copy configs to your .config directory
-```bash
-cp -r .config ~/.config/ && cp -r pictures ~/Pictures
-```
