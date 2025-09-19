@@ -1,4 +1,4 @@
-Fedora i3 Config
+
 
 Minimalist and functional configuration files for a Fedora-based i3 window manager setup.
 
