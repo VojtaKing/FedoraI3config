@@ -11,7 +11,7 @@ font pango:Inconsolata Nerd Font Mono 10
 # --- Autostart Programs ---
 
 # Monitors
-exec_always xrandr --output HDMI-A-0 --primary --left-of eDP --auto
+#exec_always xrandr --output HDMI-A-0 --primary --left-of eDP --auto
 
 # Compositor
 exec_always --no-startup-id picom -b
