@@ -1,0 +1,75 @@
+# "debug.render_timer" = false
+# tabspaces = 8
+
+[general]
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[terminal]
+osc52 = "OnlyCopy"
+
+[colors.bright]
+black = "0x686868"
+blue = "0x7aa6da"
+cyan = "0x54ced6"
+green = "0x9ec400"
+magenta = "0xb77ee0"
+red = "0xff3334"
+white = "0xffffff"
+yellow = "0xe7c547"
+
+[colors.cursor]
+cursor = "0x00ff00"
+text = "0x000000"
+
+[colors.normal]
+black = "0x000000"
+blue = "0x7aa6da"
+cyan = "0x70c0ba"
+green = "0xb9ca4a"
+magenta = "0xc397d8"
+red = "0xd54e53"
+white = "0xc7c7c7"
+yellow = "0xe6c547"
+
+[colors.primary]
+background = "0x000000"
+foreground = "0xeaeaea"
+
+# [dpi]
+# x = 96.0
+# y = 96.0
+
+[env]
+# TERM = "xterm-256color"
+TERM = "tmux"
+
+[window]
+decorations = "None"
+
+[font]
+size = 11.0
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+# [small_font]
+# upper_bound = 7.0
+
+# [small_font.font]
+# size = 12.0
+
+# [small_font.font.bold]
+# family = "Terminus"
+# 
+# [small_font.font.italic]
+# family = "Terminus"
+# 
+# [small_font.font.normal]
+# family = "Terminus"
+
+# [visual_bell]
+# animation = "EaseOutExpo"
+# duration = 0
