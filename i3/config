@@ -26,13 +26,13 @@ exec_always xset r rate 300 50
 exec_always --no-startup-id bash -c "sleep 1 && xdotool key --clearmodifiers Num_Lock"
 
 # i3-master-stack
-exec_always --no-startup-id bash /home/vojta/.config/i3/i3-master-stack/i3_master
+exec_always --no-startup-id bash /home/$USER/.config/i3/i3-master-stack/i3_master
 
 # Mouse
 exec_always --no-startup-id unclutter -idle 2 -root
 
 # Background
-exec_always --no-startup-id feh --bg-fill "/home/vojta/pictures/wallpapers/nord/20.png"
+exec_always --no-startup-id feh --bg-fill "/home/$USER/pictures/wallpapers/nord/20.png"
 
 # Autostart apps
 exec --no-startup-id dex --autostart --environment i3
