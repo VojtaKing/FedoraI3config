@@ -1,0 +1,86 @@
+[language-server.wakatime]
+command = "wakatime-ls"
+
+[language-server.steel-language-server]
+command = "steel-language-server"
+args = []
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+config = {}
+
+[language-server.asm-lsp]
+command = "asm-lsp" 
+args = []
+
+[[language]]
+name = "scheme"
+formatter = { command = "raco", args = ["fmt", "-i"] }
+auto-format = true
+language-servers = [ "steel-language-server", "wakatime" ]
+
+[[language]]
+name = "c"
+indent = { tab-width = 4, unit = "    " }
+language-servers = [ "clangd", "wakatime" ]
+
+[[language]]
+name = "cpp"
+indent = { tab-width = 4, unit = "    " } 
+language-servers = [ "clangd", "wakatime" ]
+
+[[language]]
+name = "bash"
+indent = { tab-width = 4, unit = "t" } 
+language-servers = [ "bash-language-server", "wakatime" ]
+
+[[language]]
+name = "gas"
+file-types = ["asm", "S"]
+indent = { tab-width = 4, unit = "    " }
+language-servers = [ "asm-lsp", "wakatime" ]
+
+[[language]]
+name = "markdown"
+indent = { tab-width = 4, unit = "    " } 
+language-servers = ["marksman", "wakatime"]
+
+[[language]]
+name = "rust"
+indent = { tab-width = 4, unit = "    " } 
+language-servers = ["rust-analyzer", "wakatime"]
+
+[[language]]
+name = "nix"
+indent = { tab-width = 4, unit = "    " } 
+language-servers = ["nil", "wakatime"]
+
+[[language]]
+name = "lua"
+indent = { tab-width = 4, unit = "    " } 
+language-servers = ["lua-language-server", "wakatime"]
+
+[[language]]
+name = "python"
+indent = { tab-width = 4, unit = "    " } 
+language-servers = ["pyright", "wakatime"]
+
+[[language]]
+name = "kotlin"
+indent = { tab-width = 4, unit = "    " } 
+language-servers = ["kotlin-language-server", "wakatime"]
+
+[[language]]
+name = "java"
+indent = { tab-width = 4, unit = "    " } 
+language-servers = ["jdtls", "wakatime"]
+
+[[language]]
+name = "javascript"
+indent = { tab-width = 4, unit = "    " } 
+language-servers = ["typescript-language-server", "wakatime"]
+[[language]]
+name = "html"
+language-servers = [{ name = "superhtml", except-features = ["format"] }, "vscode-html-language-server"]
+auto-format = true
